@@ -2,7 +2,7 @@
 Solution to competitive programming problems
 
 /*
-Carpeta con el nombre de la plata forma del problema / Titulo del problema.cpp (Dentro del codigo colocar datos del problema)
+Carpeta con el nombre de la plataforma del problema / Titulo del problema.cpp (Dentro del codigo colocar datos del problema)
 
 Example:
 
