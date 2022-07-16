@@ -1,5 +1,5 @@
 /*
-Algorithm or Logic: Para que se pueda formar un rectangulo. El triangulo que se forma en un lado debe tener la mima altura en el lado opuesto de la mesa.
+Algorithm or Logic: Para que se pueda formar un rectangulo. El triangulo que se forma en un lado debe tener la misma altura en el lado opuesto de la mesa.
 Se colocan las patas asi: 
 		             | La mayor
 La siguiente mayor  |       | La siguiente de los menores
