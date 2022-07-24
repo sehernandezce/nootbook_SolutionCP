@@ -1,6 +1,6 @@
 /*
 Algorithm or Logic: Binary Search
-Complexity: O(n*nlog n)
+Complexity: O(n*log n)
 Link: https://codeforces.com/contest/1703/problem/F
 More info:
 */
