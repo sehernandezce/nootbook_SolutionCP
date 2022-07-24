@@ -1,6 +1,6 @@
 /*
 Algorithm: Binary search
-Complexity: NlogN
+Complexity: logN
 Link: https://codeforces.com/problemset/problem/195/A
 */
 
