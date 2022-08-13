@@ -1,7 +1,7 @@
 /*
 Problem name: A. Artistic Swimming
 Algorithm or Logic: Dijkstra's Algorithm
-Complexity: O(n^2 + m) 
+Complexity: O(n^2 + m) ?
 Link: https://codeforces.com/gym/103577/problem/A
 More info: https://cp-algorithms.com/graph/dijkstra.html
 https://brilliant.org/wiki/dijkstras-short-path-finder/
