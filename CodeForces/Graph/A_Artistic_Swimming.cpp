@@ -66,8 +66,7 @@ int dijkstra (int begin, int end,int n,int x){
         pending.pop();
         
         for(auto v: graph[u]){ 
-            
- 
+             
             val= distance[u] + v.second + x;            
             if(val < distance[v.first]){
                distance[v.first]=val;
