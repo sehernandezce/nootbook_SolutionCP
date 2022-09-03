@@ -49,20 +49,21 @@ int main(){
     IO; 
     rwArchive();
     //Begin
-
+    
     ll t;
     cin >> t;
-    dd a,b,c,x;
+    ll a,b,c, x;
         
     while (t--){
         cin >> a >> b >> c >> x;
-
-        x/=100;
-        dd ida = distance(a,b+2.0*c); 
+ 
+        dd ida = distance(a,b+2LL*c); 
         dd vuelta = distance(a*x,b*x);
-        x=1-x;
-        vuelta += distance(a*x,b*x + 2.0*c);
+        x=100-x;
+        vuelta += distance(a*x,b*x + 200LL*c);  
+        vuelta /= 100.0;
         cout << precise(ida+vuelta,9) << endl;
+       
     }
     //End
     return 0;
@@ -94,4 +95,21 @@ void rwArchive(){
         dd distance = dis1 + dis2 + dis3;
         
         cout << precise(distance,9) << endl;
+*/
+
+/*  Attempt 2 with double . Too slow
+ll t;
+    cin >> t;
+    dd a,b,c,x;
+        
+    while (t--){
+        cin >> a >> b >> c >> x;
+
+        x/=100;
+        dd ida = distance(a,b+2.0*c); 
+        dd vuelta = distance(a*x,b*x);
+        x=1-x;
+        vuelta += distance(a*x,b*x + 2.0*c);
+        cout << precise(ida+vuelta,9) << endl;
+    }
 */
