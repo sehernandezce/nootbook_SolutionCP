@@ -33,23 +33,20 @@ struct Rectangle
     
     T area()
     {
-        return (y2-y1)> 0 && (x2-x1)>0 ? (y2-y1)*(x2-x1): -1;
+        return (y2-y1)*(x2-x1);
     }
 
-    Rectangle intersect(Rectangle &obj2){
-        Rectangle ans(max(x1,obj2.x1),max(y1,obj2.y1),min(x2,obj2.x2),min(y2,obj2.y2));
-        return ans;
-    }
-
-    T area_inter(Rectangle &obj2){
-        return intersect(obj2).area();
+    T area_inter(Rectangle <T> &obj2){
+        Rectangle <T> ans(max(x1,obj2.x1),max(y1,obj2.y1),min(x2,obj2.x2),min(y2,obj2.y2));
+        if((ans.y2-ans.y1)> 0 && (ans.x2-ans.x1)>0) return ans.area();
+        return -1;
     }
 };
 
 int main()
 {
     IO;
-     rwArchive();
+    rwArchive();
     Rectangle <int> rec1, rec2, rec3;
 
     cin >> rec1.x1 >> rec1.y1 >> rec1.x2 >> rec1.y2;
@@ -57,11 +54,9 @@ int main()
     cin >> rec3.x1 >> rec3.y1 >> rec3.x2 >> rec3.y2; 
 
     int areatotal = rec1.area() + rec2.area();
-    //cout << rec1.area() << endl;
-    //cout << rec2.area() << endl;
-    //cout << rec3.area() << endl;
+
     int area_inter = max(rec1.area_inter(rec3),0) + max(rec2.area_inter(rec3),0);
-    //cout << rec2.area_inter(rec3) << endl;
+
     int ans = areatotal - area_inter;
 
     cout << ans << endl;
