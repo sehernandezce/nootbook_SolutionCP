@@ -4,7 +4,8 @@ Se colocan las patas asi:
 		             | La mayor
 La siguiente mayor  |       | La siguiente de los menores
               La menor | 
-La diferencia de los dos menores tiene que ser igual a la diferencia de los dos mayores, asi puedes ubicar las dos mas grandes en un extremo y se mantiene la proporcion con la inclinacion.
+La diferencia de los dos menores tiene que ser igual a la diferencia de los dos mayores, asi puedes ubicar las dos mas grandes en un extremo 
+y se mantiene la proporcion con la inclinacion.
 
 Complexity: 1
 Link: https://codeforces.com/problemset/gymProblem/102569/K
